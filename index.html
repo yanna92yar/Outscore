@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Outscore cards game</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css"/>
+		<script src="jquery-1.7.min.js"></script>
+	</head>
+	<body>
+		<h1>Outscore cards game</h1>
+		<p>
+			This is a demo for <b>"Outscore"</b> gameplay. You can play both hands (lower hand and upper hand).
+			<br>Check game description and technicals <a href="https://github.com/yanna92yar/Outscore">here</a> 
+			<br> Special thanks to <a href="http://einaregilsson.com">Einar Egilsson</a> for <b>cards.js</b> library.
+		</p>
+		<img class="preload" src="img/cards.png"/>
+
+		<div id="card-table">
+			<label>Scores</label>
+			<div id="score">
+				Scores will appear here. 
+			</div>
+			<button id="deal">DEAL</button>
+			<button id="player1">player1</button>
+			<button id="player2">player2</button>
+		</div>
+		<footer>
+			<b>Outscore</b> cards game was created by <a href="http://github.com/yanna92yar">Abderrahim Benseguane</a>.
+			<b>cards.js</b> was created by <a href="http://einaregilsson.com">Einar Egilsson</a> and is licensed
+			under the MIT license. The card images were created by <a href="http://nicubunu.ro">Nicu Buculei</a> and are
+			in the public domain.
+		</footer>
+		<!-- load this at the bottom so the #card-table element exists -->
+		<script src="deckType.js"></script>
+		<script src="cards.js"></script>
+		<script src="script.js"></script>
+
+	</body>
+</html>
